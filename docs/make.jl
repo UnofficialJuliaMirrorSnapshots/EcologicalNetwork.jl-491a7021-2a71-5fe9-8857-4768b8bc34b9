@@ -7,12 +7,11 @@ Pkg.activate(".")
 using EcologicalNetworks
 
 makedocs(
-    sitename = "EcologicalNetworks.jl",
+    sitename = "EcologicalNetworks",
     authors = "Timothée Poisot",
     modules = [EcologicalNetworks],
     pages = [
         "Index" => "index.md",
-        "Contents" => "toc.md",
         "Interface" => [
             "Types" => "interface/types.md",
             "Conversions" => "interface/conversions.md",
@@ -26,6 +25,7 @@ makedocs(
             "Centrality and paths" => "properties/paths.md",
             "Overlap and similarity" => "properties/overlap.md",
             "Null models" => "properties/nullmodels.md",
+            "Information theory" => "properties/information.md",
             "Beta-diversity" => "properties/betadiversity.md"
         ]
     ]
