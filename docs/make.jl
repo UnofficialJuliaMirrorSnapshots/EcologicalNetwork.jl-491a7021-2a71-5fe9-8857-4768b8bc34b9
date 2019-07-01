@@ -5,6 +5,7 @@ push!(LOAD_PATH,"../src/")
 Pkg.activate(".")
 
 Pkg.add("EcologicalNetworksPlots") # IMPORTANT
+Pkg.add("Plots") # IMPORTANT
 
 using Documenter
 using EcologicalNetworks
@@ -39,7 +40,8 @@ makedocs(
 deploydocs(
     deps   = Deps.pip("pygments", "python-markdown-math"),
     repo   = "github.com/PoisotLab/EcologicalNetworks.jl.git",
-    devbranch = "develop"
+    devbranch = "master"
 )
 
 Pkg.rm("EcologicalNetworksPlots") # IMPORTANT
+Pkg.rm("Plots") # IMPORTANT
